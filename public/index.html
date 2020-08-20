@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="GitLab Pages">
+    <title>WAM Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  
+  
+  <body>
+    <nav class="menu">
+      <ul class="menu_list">
+        <li rel="panel1" class="menu_link active">WAM Calculator</li>
+        <li rel ="panel2" class="menu_link">Unit Mark Calculator</li>
+      </ul>
+    </nav>
+
+    <main>
+      <div id="panel1" class = "panel active">
+        <article>
+          <p id="description"> Whilst using the initial WAM Calculator provided by the university website,
+            I found many inconvenience  such as not being able to delete units that have been accidently added and having to refresh the whole page,
+            unnecessary content being displayed such as how the WAM was calculated, which may be beneficial for a proportion of users but not for the majority,
+            and the design that falls off trends. To cover these points, I've created a WAM Calculator along with an unit mark calculator that allows students to
+            predict their unit marks by inputting their current assignment marks and their predicted exam/assignment marks.
+          </p>
+          <h2 class="heading">WAM Calculator</h2>
+          <h1 id = tableArea></h1>
+        </article>
+        <aside>
+          <h4>The calculated WAM is: <h4 id="calculated_WAM">00.00</h4></h4>
+        </aside>
+        
+        <button id="clear-all" class="bottom_buttons"> Clear All</button>
+        <button id="new-unit" class="bottom_buttons"> + Add a New Unit</button>   
+      </div>
+      
+      <div id="panel2" class="panel">
+        <article>
+            <h2 class="heading">Unit Mark Calculator</h2>
+            <button id="new-table" class="bottom_buttons"> + Add a New Unit</button>  
+            <h2 id ="tableArea2"></h2>
+        </article>
+        
+        
+      </div>
+    </main>
+
+    
+  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./unitmark.js"></script>
+    <script type="text/javascript" src="./tabbing.js"></script>
+    
+</html>
+
